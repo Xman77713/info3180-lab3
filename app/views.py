@@ -18,6 +18,11 @@ def about():
     return render_template('about.html', name="Mary Jane")
 
 
+@app.route('/contact')
+def contact():
+    """Send message to email"""
+    return render_template('contact.html')
+
 ###
 # The functions below should be applicable to all Flask apps.
 ###
